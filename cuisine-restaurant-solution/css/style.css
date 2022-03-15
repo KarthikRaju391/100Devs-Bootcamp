@@ -1,0 +1,422 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+   font-family: 'Rubik', sans-serif;  
+}
+
+h1,h2, .phone-num, .time {
+   font-family: 'Yeseva One', cursive;
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+}
+
+ul > li > a {
+   color: black;
+   text-decoration: none;
+   font-size: 1.1em;
+}
+
+span.spl {
+   color: #ff8800;
+   font-size: 1.2em;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  padding: 1em 0;
+  background: url("../images/back.jpeg");
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.navigation-list {
+  float: right;
+}
+
+.navigation-list > li + li {
+  margin-left: 2em;
+}
+
+.hero {
+  margin-top: 7em;
+  margin-bottom: 4em;
+}
+
+.hero-title {
+  font-size: 4em;
+  width: 40%;
+  letter-spacing: 2px;
+}
+
+.input-search {
+   outline: none;
+   padding: 1em;
+   width: 30%;
+   border: none;
+   border-top-left-radius: 0.5em;
+   border-bottom-left-radius: 0.5em;
+}
+
+select {
+   padding: 1em 2em;
+   background-color: #ff8800;
+   outline: none;
+   border: none;
+   border-top-right-radius: 0.5em;
+   border-bottom-right-radius: 0.5em;
+   color: white;
+}
+.hero-social {
+  margin-top: 1.5em;
+}
+
+.hero-social > div {
+  float: left;
+}
+
+.hero-social > div + div {
+  margin-left: 2em;
+}
+
+.info {
+  margin-top: 2em;
+  text-align: justify;
+  padding-right: 23em;
+  margin-bottom: 4em;
+  background: url("../images/img2.jpg");
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-position: left;
+}
+
+.info .right {
+  float: right;
+  width: 65%;
+}
+
+.info-title {
+   text-align: left;
+  font-size: 3.5em;
+  letter-spacing: 1.7px;
+}
+
+.info-sub {
+   line-height: 1.6em;
+}
+
+.info-sub + .info-sub {
+   margin-bottom: 2.5em;
+}
+
+.disc-link {
+   background-color: #ff8800;
+   text-decoration: none;
+   color: white;
+   padding: 1em;
+   border-radius: 0.5em;
+}
+
+.center {
+  text-align: center;
+}
+
+/* .menu {
+  position: relative;
+} */
+
+.menu section > div {
+  height: 18em;
+  float: left;
+  width: 20%;
+}
+
+.image-section > div > img {
+  height: 18em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu section {
+  margin-top: 2em;
+}
+
+.menu section > div + div {
+  margin-left: 6.66%;
+}
+.menu-title,
+.contact-title,
+.testimony-title {
+  font-size: 3.5em;
+  letter-spacing: 2.5px;
+}
+
+
+.menu span,
+.testimony span {
+  display: block;
+  text-align: center;
+}
+
+.menu ul > li + li {
+  margin-left: 2.5em;
+}
+
+.menu-items {
+   width: 40%;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.menu-items::after {
+  content: "";
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 0.95em;
+}
+
+.menu-items a:hover {
+   color: #ff8800;
+   border-bottom: 2px solid #ff8800;
+   padding-bottom: 0.9em;
+}
+
+p.phone-num {
+   color: #ff8800;
+   font-size: 30px;
+}
+
+
+.contact {
+  margin-top: 6em;
+}
+
+.contact span {
+  display: block;
+}
+
+.contact > div > span {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.phone-num {
+  font-size: 1.5em;
+}
+
+.contact > section {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact > section > div {
+  float: left;
+}
+
+.contact > section > div + div {
+  float: right;
+}
+
+.contact-image {
+  height: 18em;
+  width: 35%;
+}
+
+.contact-image > img {
+  height: 18em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.testimony {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+.testimony img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.testimony > div > div > img {
+   width: 8%;
+}
+
+.testimony h4 {
+  font-size: 1.3em;
+}
+
+.testimony div > span {
+  margin-top: -1em;
+}
+
+.testimony p {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1em;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+@media all and (max-width: 950px) {
+  
+  .navigation-list > li + li {
+    margin-left: 1em;
+  }
+
+  .menu-items {
+    width: 100%;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  .info {
+     padding-right: 0;
+     height: 40vh;
+     background: none;
+  }
+
+  .info .right {
+    width: 100%;
+  }
+
+  .contact > section {
+    width: 80%;
+  }
+  
+  .contact-image {
+    width: 70%;
+  }
+  
+  .contact > section > div {
+    float: left;
+  }
+  
+  .contact > section > div + div {
+    float: right;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav > ul {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 3.5em;
+    width: 100%;
+  }
+
+  .input-search, select {
+    width: 70%;
+    border-radius: 0.5em;
+  }
+
+  select {
+    margin-top: 1em;
+  }
+
+  .info {
+    padding-right: 0;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .info-title {
+    text-align: center;
+  }
+
+  .info .right {
+    width: 100%;
+  }
+
+  .menu {
+    padding-top: 3.5em;
+  }
+
+  .menu ul > li + li {
+    display: block;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  .menu-items a:hover {
+    color: #ff8800;
+    border: none;
+  }
+
+  .menu section > div{
+    width: 100%;
+  }
+
+  .menu section > div + div {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .contact > section {
+    width: 100%;
+  }
+
+  .contact > section > div {
+    float: none;
+  }
+  
+  .contact > section > div + div {
+    float: none;
+  }
+
+  .contact > section > div {
+    text-align: center;
+  }
+
+  .contact-image {
+    width: 90%;
+  }
+
+}

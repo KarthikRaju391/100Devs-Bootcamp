@@ -1,0 +1,301 @@
+/* Box Model Hack */
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+   content: '.';
+   display: block;
+   clear: both;
+   visibility: hidden;
+   line-height: 0;
+   height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.info-img > img{
+   width: 100%;
+}
+
+.text-uppercase {
+   text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+   color: #f1f1f1;
+}
+
+h1 {
+   margin: 0;
+}
+
+/* 
+
+  #66768a 
+  #dbdfe2
+  #161f2a
+
+*/
+
+
+/******************************************/
+/* LAYOUT */
+/******************************************/
+
+.container {
+   max-width: 1400px;
+   margin: 0 auto;
+   width: 90%;
+}
+
+.cta {
+   opacity: 0.7;
+   letter-spacing: 1.5px;
+}
+
+.link-btn {
+   padding: 1em 1.5em;
+   background: #dbdfe2;
+   border: 1px solid #66768a;
+   color: #161f2a;
+   width: 30%;
+   margin: 0 auto;
+   font-weight: bold;
+}
+
+.alt {
+   background-color: white;
+}
+
+header {
+   background: #66768a;
+   padding: 1.5em 0;
+   height: 70vh;
+}
+
+.navigation-container li{
+   display: inline-block;
+}
+
+.navigation-container li + li {
+   margin-left: 2em;
+}
+
+.navigation-container > a {
+   float: right;
+   background-color: #f1f1f1;
+   color: #66768a;
+   padding: 0.5em 1em;
+   border-radius: 0.2em;
+   font-weight: bold;
+}
+ul li > a {
+   font-weight: 600;
+   letter-spacing: 1.5px;
+}
+
+.navigation-container img {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.navigation-container ul {
+   float: left;
+}
+
+section.hero {
+   background-color: #66768a;
+   color: #f1f1f1;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 70%;
+}
+
+
+.hero h1 {
+   font-size: 4.3em;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 1em;
+}
+
+.hero > p {
+   font-size: 1.3em;
+   width: 85%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.hero > a {
+   display: block;
+   margin-top: 2em;
+   text-align: center;
+   font-size: 1.3em;
+}
+
+.main-content {
+   width: 50%;
+   margin: 0 auto;
+   margin-top: 7em;
+   margin-bottom: 7em;
+   text-align: center;
+}
+
+.main-content h2{
+   font-size: 2.5em;
+}
+
+.main-content p {
+   margin-top: 2em;
+}
+
+.info {
+   background: #dbdfe2;
+}
+
+.info-content{
+   padding: 6em 0;
+   margin: 0 auto;
+   width: 70%;
+}
+
+.info-content > div {
+   float: left;
+   width: 50%;
+
+}
+
+.info-content > div + div {
+   float: right;
+}
+
+.info-img {
+   background: #66768a;
+   height: 15em;
+   width: 80%;
+   margin: 0 auto;
+}
+
+
+.infoo > .infoo-title, .infoo-subtitle{
+   width: 80%;
+   margin: 0 auto;
+   padding-top: 2em;
+   text-align: center;
+}
+
+.info-content > div > h3 {
+   font-size: 1.5em;
+}
+
+.info-content > div > a {
+   display: block;
+   margin-top: 2em;
+   text-align: center;
+}
+
+.vol > section > a {
+   display: block;
+   margin-top: 2em;
+}
+
+
+footer {
+   background: #161f2a;
+   color: #ffffff;
+   padding: 2em 0;
+}
+
+footer a {
+   color: #fff;
+}
+
+
+.social-section{
+   float: left;
+   width: 50%;
+}
+
+.social-links li {
+   float: left;
+   width: 8.33333%;
+}
+
+.social-section > div + div > ul > li {
+   float: left;
+   width: 12.5%;
+   margin: 0.2em 0
+}
+
+.social-section > div + div {
+   margin-top: 2em;
+}
+
+.social-section > div + div > p  {
+   opacity: 0.5;
+}
+
+.address-section {
+   float: right;
+}
+
+.address-section > h4 {
+   letter-spacing: 1.3px;
+   margin-bottom: 1em;
+}
+
+.address-section > p {
+   opacity: 0.7;
+}
+
+.social {
+   padding-bottom: 1em;
+   border-bottom: 2px solid #fff;
+}
+
+.about {
+   margin: 1em 0;
+}
+
+.about > p {
+   float: left;
+}
+
+.about > img {
+   float: right;
+}
+
+
+@media screen and (max-width: 820px){
+   section.hero {
+      width: 100%;
+      padding: 2em 0;
+   }
+
+   .hero h1 {
+      font-size: 3.5em;
+   }
+}
